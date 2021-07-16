@@ -23,12 +23,19 @@ a{
     gap: 20px 20px;  
 }
 
+.s1-button:hover{
+    border:1px solid grey;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
 .s1-button{
     width: 150px;
     height: 30px;
     background-color:  #f2f2f2;
     border:none;
 }
+
 
 
 footer{
@@ -39,35 +46,49 @@ footer{
   height: 50px;
   background-color: #f2f2f2;
   color: rgb(168, 157, 157);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
 }
-.left-footer{
-    position: relative;
-   display: flex;
-   justify-content: flex-start;
-   gap: 30px 20px;
-   top: 20px;
-   left: 40px;
+ .left-footer a{
+     color:grey;
+     margin: 20px 20px 20px 20px;
+     text-decoration: none;
+    
 }
 
-.right-footer{
-    position: relative;
-    display: flex;
-    justify-content: flex-end;
-    gap: 30px 20px;
-    right: 30px;
-}
+.right-footer a{
+    margin-right: 20px;
+    color:grey;
+    text-decoration: none;
+    
+} 
 
 .search-bar{
     display: block;
-    width: 70%;
+    width: 50%;
     height: 40px;
     margin: 30px auto;
-    border-width: 0.2px;
+    border:1px solid grey;
+    
     
     border-radius: 20px;
     
 }
 
+
+.search-bar:active,.search-bar:focus{
+    outline: none;
+}
+
 #f2f2f2-color{
     color: #f2f2f2;
+}
+
+#f2f2f2-color a:hover{
+text-decoration: underline;
+
+
 }
